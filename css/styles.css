@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 2;
+}
+
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
+}
+
+p {
+    color: hsl(208, 11%, 55%);
+}
+
+/* Header */
+
+header {
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 5%;
+}
+
+.mockup-image {
+    width: 100%;
+}
+
+.community-build {
+    margin-top: 5%;
+}
+
+.community-build-text {
+    padding-top: 7%;
+    padding-right: 9%;
+}
+
+/* Button */
+
+.button-1 {
+    width: 15%;
+    height: 2.5rem;
+    border-radius: 100px;
+    border-style: none;
+    background-color: #fff;
+    box-shadow: 0 3px 3px hsl(208, 11%, 55%);
+    font-weight: bold;
+}
+
+.button-2 {
+    width: 50%;
+    height: 2.5rem;
+    border-radius: 100px;
+    border-style: none;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0 3px 3px hsl(193, 100%, 96%);
+    color: hsl(193, 100%, 96%);
+}
+
+.button-1:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+.button-2:hover {
+    background-color: hsla(327, 69%, 69%, 0.801);
+}
+
+/* Middle Container Section */
+
+.middle-container {
+    padding: 5% 5%;
+    background-color: #fff;
+}
+
+.middle-container-image {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+.first-middle-container {
+    margin: 5% 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 3px hsl(208, 11%, 55%);
+}
+
+.first-middle-container-left{
+    padding: 5% 7%;
+}
+
+.second-middle-container {
+    margin: 5% 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 3px hsl(208, 11%, 55%);
+}
+
+.second-middle-container-right {
+    padding: 5% 7%;
+}
+
+.third-middle-container {
+    margin: 5% 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 3px hsl(208, 11%, 55%);
+}
+
+.third-middle-container-left {
+    padding: 5% 7%;
+}
+
+/* Third container */
+
+.third-container {
+    background-color: #fff;
+    width: 50%;
+    height: 13rem;
+    margin-left: 25%;
+    text-align: center;
+    padding: 5% 0;
+    box-shadow: 2px 2px 3px 3px hsl(208, 11%, 55%);
+    border-radius: 10px;
+    position: relative;
+    top: 150px;
+    z-index: 1;
+}
+
+/* Footer */
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 10% 5% 5%;
+    position: relative;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+}
+
+.left-footer {
+    padding-right: 15%;
+    text-align: left;
+}
+
+.middle-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.middle-footer p:hover {
+    text-decoration: underline;
+}
+
+.right-footer {
+    padding-left: 20%;
+}
+
+.right-footer .footer-icon:hover {
+    color: hsl(322, 100%, 66%);
+}
+
+.footer-icon {
+    margin-right: 10px;
+}
+
+.footer-copyright {
+    text-align: right;
+}
+
+/* Media Query */
+
+@media (max-width: 1028px) {
+    body {
+        text-align: center;
+    }
+
+    header {
+        background-image: url(../images/bg-hero-mobile.svg);
+    }
+
+    .button-1 {
+        width: auto;
+        height: 100%;
+        border-radius: 20px;
+        padding: 0 5%;
+    }
+
+    .navbar-brand {
+        width: 25%;
+        height: auto;
+    }
+
+    .community-build-text {
+        padding: 0 5%;
+    }
+
+    .mockup-image {
+        margin-top: 40px;
+    }
+
+    .third-container {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        padding: 10% 5%;
+        position: relative;
+        top: 100px;
+    }
+    
+    .button-2 {
+        width: auto;
+        padding: 0 5%;
+    }
+
+    .middle-container-image {
+        width: 80%;
+        margin: 10% 0;
+        order: 1;
+    }
+
+    .first-middle-container-left {
+        order: 2;
+    }
+
+    .third-middle-container-left {
+        order: 2;
+    }
+
+    .footer-logo {
+        margin-top: 100px;
+        text-align: left;
+    }
+
+    .footer-center {
+        display: block;
+    }
+
+    .middle-footer {
+        display: block;
+        text-align: left;
+    }
+
+    .left-footer {
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .right-footer {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        font-size: small;
+    }
+}
